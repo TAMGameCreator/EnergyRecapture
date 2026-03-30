@@ -1,0 +1,309 @@
+@charset "UTF-8";
+body{
+  background-image:url(main01.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: auto;
+}
+.title{
+  background-image:url(GameIcon.png);
+  filter:drop-shadow(0px 0px 2px white);
+  background-position: center;
+  background-size: cover;
+  padding-top: 25%;
+}
+h1{
+  font-size: 4vw;
+  text-align: center;
+  color: #eaf6fd;
+  margin-bottom: 8vw;
+  text-shadow: 0 0 1px black;
+  background-color: rgba(0,0,0,.6);
+  box-shadow: 0 0 10px black;
+  backdrop-filter: blur(12px);
+}
+h2{
+  font-size: 2vw;
+  text-align: left;
+  padding-top: 1%;
+  color: white;
+}
+h3{
+  font-size: 2vw;
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 1%;
+}
+.header{
+  color: white;
+  margin-right:1vw; 
+}
+.header:hover{
+    color: cyan;
+}
+.top_menu_one{
+  width:100%;
+  background-color: rgba(0,0,0,.7);
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;gap: 10px;
+}
+#top_menu{
+  width:100%;
+  background-color: rgba(0,0,0,.7);
+  text-decoration: none;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  transition: .2s;
+  opacity: 0;
+  z-index:-1;
+  gap: 10px;
+}
+.top_menu_bar{
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+}
+.main01{
+  background-image:url(main01.png);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: auto;
+}
+#main_article_01{
+  display: flex;
+  justify-content:center;
+  flex-flow:row;
+  text-align: left;
+  width: 100%;
+}
+.article{
+  width: 50%;
+}
+.aside{
+  width: 50%;
+}
+.youtube{
+  background-color: black;
+  width: 100%;
+  height: 25vw;
+}
+.top_content{
+  margin-right: 5%;
+  margin-left: 5%;
+  background-color: #101010;
+  padding: 1%;
+  margin-bottom: 3%;
+}
+table{
+  margin:auto;
+}
+table th {/*table内のthに対して*/
+  text-align: center;
+  color: white;
+  font-size: 1vw;
+  padding: 1vw;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  background-color: rgba(00, 255, 255, 0.3);
+}
+table td {/*table内のthに対して*/
+  text-align: center;
+  color: white;
+  font-size: 1vw;
+}
+.content{
+  margin-right: 10%;
+  margin-left: 2%;
+  background-color: #101010;
+  padding: 1%;
+  margin-bottom: 3%;
+}
+.aside_content{
+  margin-right: 2%;
+  margin-left: 10%;
+  background-color: #101010;
+  padding: 1%;
+  margin-bottom: 3%;
+}
+.text{
+  text-align: left;
+  padding-left: 5%;
+  font-size: 1vw;
+  color: #A0A0A0;
+}
+.text-Center{
+  text-align: left;
+  padding-left: 20%;
+  font-size: 1.5vw;
+  color: white;
+}
+.Line-Item{
+  text-align: left;
+  display: block;
+  padding-left: 20%;
+  font-size: 3vw;
+  position: relative;
+  color: #eaf6fd;
+}
+.Line-Item::before {
+  content: '';
+  position: absolute;
+  top: 90%;
+  right: 50%;
+  width: 0;
+  height: 5px;
+  background: linear-gradient(to right, blue, #0072FF);
+  background: -moz-linear-gradient(left, blue, #0072FF);
+  background: -webkit-linear-gradient(left, blue, #0072FF);
+  transition:  0.3s;
+}
+.Line-Item:hover::before {
+  left: 10%;
+  width: 40%;
+}
+.SNS_icon{
+  width: 3vw;
+  vertical-align: middle;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* 4列に並べる */
+  gap: 10px; /* 画像の間隔 */
+}
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* 左上だけ2倍サイズ（2列×2行分） */
+.gallery img:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+/* モーダル背景 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+/* 表示する画像 */
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+}
+/* 閉じるボタン */
+.close {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 0 0 .5vw blue;
+}
+@media (max-width:600px) {
+  .main01{
+    background-image:url(main01.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: auto;
+  }
+  #main_article_01{
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+  }
+  .text{
+    text-align: left;
+    padding-left: 10%;
+    font-size: 3vw;
+  }
+  .text-Center{
+    padding: 0;
+    text-align: center;
+    font-size: 5vw;
+  }
+  .youtube{
+  border-style: none;
+  width: 100%;
+  height: 50vw;
+  }
+  .article{
+    width: 100%;
+    background-color: #dbedf0;
+    background-image:url(main01.png);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: auto;
+  }
+  .aside{
+    width: 100%;
+  }
+  .content{
+    margin-right: 6%;
+    margin-left: 6%;
+    background-color: #101010;
+    padding: 1%;
+    margin-bottom: 3%;
+  }
+  .aside_content{
+    margin-right: 6%;
+    margin-left: 6%;
+    background-color: #101010;
+    padding: 1%;
+    margin-bottom: 3%;
+  }
+  h1{
+    font-size: 6vw;
+  }
+  h2{
+    font-size: 7vw;
+  }
+  h3{
+      font-size: 4vw;
+  }
+  .Line-Item{
+    text-align: center;
+    display: block;
+    padding-left: 0%;
+    font-size: 7vw;
+  }
+  .Line-Item::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 0;
+    height: 10%;
+    background: linear-gradient(to right, blue, #0072FF);
+    background: -moz-linear-gradient(left, blue, #0072FF);
+    background: -webkit-linear-gradient(left, blue, #0072FF);
+    transition:  0.6s;
+  }
+  .Line-Item:hover::before {
+    left: 0%;
+    width: 100%;
+  }
+  .SNS_icon{
+    width: 10vw;
+    vertical-align: middle;
+  }
+}
+*{
+  text-decoration: none;
+  margin:0%;
+  padding:0%;
+}
