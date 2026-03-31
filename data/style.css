@@ -36,7 +36,7 @@ h3{
 }
 .header{
   color: white;
-  margin-right:1vw; 
+  margin-right:1vw;
 }
 .header:hover{
     color: cyan;
@@ -274,6 +274,25 @@ table td {/*table内のthに対して*/
   }
   h3{
       font-size: 4vw;
+  }
+  table th {/*table内のthに対して*/
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+    padding: 2vw;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    background-color: rgba(00, 255, 255, 0.3);
+  }
+  table td {/*table内のthに対して*/
+    text-align: center;
+    color: white;
+    font-size: 3vw;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4列に並べる */
+    gap: 10px; /* 画像の間隔 */
   }
   .Line-Item{
     text-align: center;
