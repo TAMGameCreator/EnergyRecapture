@@ -4,6 +4,7 @@ body{
   background-size: cover;
   background-attachment: fixed;
   padding-bottom: auto;
+  background-position: center;
 }
 .title{
   background-image:url(GameIcon.png);
@@ -213,12 +214,6 @@ table td {/*table内のthに対して*/
   text-shadow: 0 0 .5vw blue;
 }
 @media (max-width:600px) {
-  .main01{
-    background-image:url(main01.png);
-    background-size: cover;
-    background-attachment: fixed;
-    padding-bottom: auto;
-  }
   #main_article_01{
     display: flex;
     justify-content:center;
@@ -243,11 +238,6 @@ table td {/*table内のthに対して*/
   }
   .article{
     width: 100%;
-    background-color: #dbedf0;
-    background-image:url(main01.png);
-    background-size: cover;
-    background-attachment: fixed;
-    padding-bottom: auto;
   }
   .aside{
     width: 100%;
@@ -315,6 +305,14 @@ table td {/*table内のthに対して*/
   .Line-Item:hover::before {
     left: 0%;
     width: 100%;
+  }
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
   }
   .SNS_icon{
     width: 10vw;
